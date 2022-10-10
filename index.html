@@ -1,26 +1,93 @@
+<!DOCTYPE html>
 <html>
-    <head>
+  <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="slide">
-            <div class="slideContent">
-                <h1>Simple Interest Calculator</h1>
-
-                Amount <input type="number"  id="principal">  <br/>
-                Interest Rate <input type="number" id="rate">  <br/>
-                <div class="slidecontainer">
-                    <input type="range" min="0" max="21" value="10.5" class="slider" id="myRange">
-                    <span id="rangeval"></span>
-                </div>
+    <title>Web App – Simple Interest Calculator</title>
+  </head>
+  <body>
+    <div class="slide">
+      <div class="slideContent">
+        <h1>Simple Interest Calculator</h1>
+        <table style="padding-left: 84px;">
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="tabel">
+            <tr>
+              <td>Amount</td>
+              <td>
+                <input type="number" id="principal" onchange="gebi('myrez').style.display='none';">
+              </td>
+            </tr>
+            <tr>
+              <td>Interest Rate</td>
+              <td>
+                <input type="range" min="1" max="20" value="10.5" step="0.5" class="slider" id="myRange" oninput="gebi('myrez').style.display='none';myrate()">
+                <span id="rateval">10.5%</span>
+              </td>
+            </tr>
+            <tr>
+              <td>No. of Years</td>
+              <td>
+                <select id="years2" style="width: 50px;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                </select>
                 <br>
-                No. of Years <input type="number" id="years" min="1">  <br/>
-                Interest : <span id="result"></span><br>
-
-                <button onclick="compute()">Compute Interest</button>
-                <p>&copy; Everyone can Get Rich</p>
-            </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button onclick="gebi('myrez').style.display='block'; compute()">Compute Interest</button>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="myrez" style="display:none; padding-left: 84px;"> If you deposit <span id="result1" style="background: yellow;"></span><span>,</span>
+          <br> at an interest rate of <span id="result2" style="background: yellow;"></span><span>.</span>
+          <br> You will receive an amount of <span id="result3" style="background: yellow;"></span><span>,</span>
+          <br> in the year <span id="result4" style="background: yellow;"></span>
+          <br>
         </div>
-    </body>
+        <p>&copy; Everyone Can Get Rich</p>
+      </div>
+    </div>
+  </body>
 </html>
