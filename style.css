@@ -30,3 +30,58 @@ h1 {
 .tabel {
   line-height: 2em;
 }
+
+input[type="range" i] {
+    appearance: auto;
+    cursor: default;
+    color: -internal-light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
+    padding: initial;
+    border: initial;
+    margin: 2px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #0d74f6;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #0d74f6;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: grey;
+  border-radius: 3px;
+  border: 0px solid #0d74f6;
+}
+
+input[type="range"]::-moz-range-progress {
+  background-color: #0d74f6;
+  border-radius:3px;
+  border:none;
+}
+
+input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
