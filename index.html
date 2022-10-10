@@ -9,8 +9,12 @@
                 <h1>Simple Interest Calculator</h1>
 
                 Amount <input type="number"  id="principal">  <br/>
-                Interest Rate <input type="number"  id="rate">  <br/>
-                No. of Years <input type="number"  id="years">  <br/>
+                Interest Rate <input type="number" id="rate">  <br/>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="21" value="10.5" class="slider" id="myRange">
+                </div>
+                <br>
+                No. of Years <input type="number" id="years" min="1">  <br/>
                 Interest : <span id="result"></span><br>
 
                 <button onclick="compute()">Compute Interest</button>
