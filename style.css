@@ -1,20 +1,32 @@
 body {
   background-color:black;
-  font-family:Verdana;
+  font-family:Arial;
+  font-size: large;
+  padding-left: 40px;
 }
 
 h1 {
   color:grey;
+  font-family:Verdana;
+  font-size: 1.8em;
 }
 
 .slide {
-  border-radius: 10px;
+  border-radius: 25px;
   flex: 1;
   margin-bottom: 10px;
   justify-content: space-around;
   background-color: #FFF;
+  width: 525px;
 }
 
-slideContent {
-  padding: 15px;
+.slideContent {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 1px;
+  padding-left: 15px;
+}
+
+.tabel {
+  line-height: 2em;
 }
