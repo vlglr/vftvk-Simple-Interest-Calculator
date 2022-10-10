@@ -2,15 +2,16 @@ body {
   background-color:black;
   font-family:Verdana;
 }
+
 h1 {
   color:grey;
 }
+
 .slide {
   border-radius: 10px;
-  
-margin-bottom: 10px;
-flex: 1;
-justify-content: space-around;
+  flex: 1;
+  margin-bottom: 10px;
+  justify-content: space-around;
   background-color: #FFF;
 }
 
